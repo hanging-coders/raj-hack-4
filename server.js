@@ -7,7 +7,7 @@ const {mongoose} = require('./db/mongoose');
 const{ObjectID}= require('mongodb');
 const time = new Date().getTime();
 
-const port =  process.env.PORT;
+const port =  3000;
 
 
 
