@@ -8,7 +8,7 @@ var app = express();
 const{ObjectID}= require('mongodb');
 const time = new Date().getTime();
 
-const port =  3000;
+const port =  process.env || 3000;
 
 
 app.get('/',(req,res) => {
