@@ -1,0 +1,11 @@
+var Web3 = require('web3');
+var web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+// var person1 = web3.eth.accounts.create();
+// var person2 = web3.eth.accounts.create();
+// var x = web3.eth.accounts;
+var coinbase = web3.eth.coinbase;
+var originalBalance = web3.eth.getBalance(coinbase);
+// let x = web3.eth.getBalance(y.address);
+console.log(originalBalance);
+// console.log(web3.eth.accounts);
+// console.log(web3.eth.getBalance(web3.eth.coinbase).toNumber());
